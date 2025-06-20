@@ -1,0 +1,391 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  background: #9ecee4;
+  position: relative; /* Добавляем для позиционирования nav */
+  margin-bottom: 40px;
+}
+
+header a {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 500;
+  color: black;
+}
+
+header a:hover {
+  transform: scale(1.2);
+}
+
+nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  padding: 0 20px;
+}
+nav li a {
+    padding: 10px;
+    text-decoration: none;
+    position: relative;
+}
+
+nav li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+}
+
+nav li a:hover::after {
+    transform: scaleX(1);
+}
+
+.Logo{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+h1{
+    font-size: 36px;
+}
+
+.logo_car{
+    width: 100px;
+    height: 100px;
+}
+
+
+.navigation{
+    text-align: center;
+}
+
+.trust-section {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.trust-title {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.trust-reasons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.trust-item {
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    width: 280px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.trust-item:hover {
+    transform: translateY(-5px);
+}
+
+.trust-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.trust-reviews {
+    display: flex;
+    justify-content: center;
+}
+
+.review {
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.review-quote {
+    width: 30px;
+    opacity: 0.7;
+    margin-bottom: 10px;
+}
+
+.review-author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.review-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.searchCar{
+    background-color: #f9f9f9;
+    margin-bottom: 50px;
+}
+
+.auto{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: #333;
+}
+
+.auto h2 {
+    font-size: 32px;
+}
+
+.AutoSetting{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.AutoSetting select{
+    height: 50px;
+    border-radius: 10px;
+}
+
+.button_search{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.button_search input{
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: #9ecee4
+    
+}
+
+.news{
+    background-color: #f9f9f9;
+    padding: 60px 0;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.news_card{
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.card1{
+    width: 300px;
+    padding-bottom: 10px;
+}
+
+.img1 img{
+    width: 300px;
+    height: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.news_card .card1 .title1 h3{
+    font-size: 20px;
+}
+
+.news_card .card1 .title1{
+    margin-bottom: 5px;
+}
+
+.news_card .card1 .word1 p{
+    font-size: 18px;
+}
+
+.card2{
+    width: 300px;
+    padding-bottom: 10px;
+}
+
+.img2 img{
+    width: 300px;
+    height: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.news_card .card1 .title2 h3{
+    font-size: 20px;
+}
+
+.news_card .card1 .title2{
+    margin-bottom: 5px;
+}
+
+.news_card .card1 .word2 p{
+    font-size: 18px;
+}
+
+.card3{
+    width: 300px;
+    padding-bottom: 10px;
+}
+
+.img3 img{
+    width: 300px;
+    height: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.news_card .card1 .title3 h3{
+    font-size: 20px;
+}
+
+.news_card .card1 .title3{
+    margin-bottom: 5px;
+}
+
+.news_card .card1 .word3 p{
+    font-size: 18px;
+}
+
+.description1{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+.description1 a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #000000;
+}
+
+.description2{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+.description2 a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #000000;
+}
+
+.description3{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+.description3 a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #000000;
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    /* Добавим цвет и ширину блока для наглядности*/
+    background-color: #9ecee4;
+    width: 100%;
+    height: 70px;
+}
+
+.mobile{
+    padding-top: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.anchor {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.anchor a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    text-align: right;
+}
+
+

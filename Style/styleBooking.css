@@ -1,0 +1,420 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  background: #9ecee4;
+  position: relative; /* Добавляем для позиционирования nav */
+  margin-bottom: 40px;
+}
+
+header a {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 500;
+  color: black;
+}
+
+header a:hover {
+  transform: scale(1.2);
+}
+
+nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  padding: 0 20px;
+}
+nav li a {
+  padding: 10px;
+  text-decoration: none;
+  position: relative;
+}
+
+nav li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transform: scaleX(0);
+  transition: transform 0.4s ease;
+}
+
+nav li a:hover::after {
+  transform: scaleX(1);
+}
+
+.Logo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+.logo_car {
+  width: 100px;
+  height: 100px;
+}
+
+.navigation {
+  text-align: center;
+}
+
+.bookingCar{
+    background-color: #f9f9f9;
+    margin-bottom: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.titleCar{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.titleCar h2 {
+    font-size: 32px;
+    color: #333;
+}
+
+.form1{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.form1 input{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.form2{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.form2 input{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.f7{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.f7 input{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.btnSubmit1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.btnSubmit1 input{
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: #9ecee4
+}
+
+.customerInformation{
+    background-color: #f9f9f9;
+    margin-bottom: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.titleUser{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.titleUser h2 {
+    font-size: 32px;
+    color: #333;
+}
+
+.form3{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.form3 input{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.form4{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.form4 input{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.f14{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.f14 input{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.btnSubmit2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.btnSubmit2 input{
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: #9ecee4
+}
+
+.carBooking{
+    background-color: #f9f9f9;
+    margin-bottom: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.titleBooking{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.titleBooking h2 {
+    font-size: 32px;
+    color: #333;
+}
+
+.Auto1{
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cardAuto1 img{
+    width: 300px;
+    height: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.carBooking .Auto1 .titleAuto1 h3{
+    font-size: 20px;
+}
+
+.carBooking .Auto1 .titleAuto1{
+    margin-bottom: 5px;
+}
+
+.cardAuto2 img{
+    width: 300px;
+    height: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.carBooking .Auto2 .titleAuto1 h3{
+    font-size: 20px;
+}
+
+.carBooking .Auto2 .titleAuto1{
+    margin-bottom: 5px;
+}
+
+.cardAuto3 img{
+    width: 300px;
+    height: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.carBooking .Auto3 .titleAuto1 h3{
+    font-size: 20px;
+}
+
+.carBooking .Auto3 .titleAuto1{
+    margin-bottom: 5px;
+}
+
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    /* Добавим цвет и ширину блока для наглядности*/
+    background-color: #9ecee4;
+    width: 100%;
+    height: 50px;
+}
+
+.mobile{
+    padding-top: 20px;
+    font-size: 20px;
+    text-align: center;
+}
