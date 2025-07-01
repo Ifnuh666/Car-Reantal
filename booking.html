@@ -13,13 +13,10 @@
         <a href="index.html"><img class="logo_car" src="./Image/Logo.png" /></a>
       </div>
       <div class="Logo">
-        <h1 id="nameCompany">Индекс Драйв</h1>
+        <h1 id="nameCompany">Majestic Drive</h1>
       </div>
       <nav class="navigation">
         <ul>
-          <li>
-            <a href="index.html">Акции</a>
-          </li>
           <li>
             <a href="booking.html">Бронирование</a>
           </li>
@@ -35,31 +32,48 @@
       </div>
       <div class="form1">
         <div class="f1">
-          <input type="text" placeholder="Введите идентификатор автомобиля: " />
+          <input
+            type="text"
+            required
+            placeholder="Введите идентификатор автомобиля: "
+          />
         </div>
         <div class="f2">
-          <input type="text" placeholder="Введите марку автомобиля: " />
+          <input
+            type="text"
+            required
+            placeholder="Введите марку автомобиля: "
+          />
         </div>
         <div class="f3">
-          <input type="text" placeholder="Введите название автомобиля: " />
+          <input
+            type="text"
+            required
+            placeholder="Введите название автомобиля: "
+          />
         </div>
       </div>
       <div class="form2">
         <div class="f4">
-          <input type="text" placeholder="Введите номер автомобиля: " />
+          <input
+            type="text"
+            required
+            placeholder="Введите номер автомобиля: "
+          />
         </div>
         <div class="f5">
-          <input type="date" />
+          <input type="date" required />
         </div>
         <div class="f6">
           <input
             type="text"
+            required
             placeholder="Введите стоимость бронирования автомобиля: "
           />
         </div>
       </div>
       <div class="f7">
-        <input type="text" placeholder="Введите название фелиала: " />
+        <input type="text" required placeholder="Введите название фелиала: " />
       </div>
       <div class="btnSubmit1">
         <input type="submit" value="Отправить" />
@@ -71,28 +85,40 @@
       </div>
       <div class="form3">
         <div class="f8">
-          <input type="text" placeholder="Введите имя: " />
+          <input type="text" required placeholder="Введите имя: " />
         </div>
         <div class="f9">
-          <input type="text" placeholder="Введите фамилию: " />
+          <input type="text" required placeholder="Введите фамилию: " />
         </div>
         <div class="f10">
-          <input type="text" placeholder="Введите отчество (при наличии): " />
+          <input
+            type="text"
+            required
+            placeholder="Введите отчество (при наличии): "
+          />
         </div>
       </div>
       <div class="form4">
         <div class="f11">
-          <input type="tel" placeholder="Введите номер телфона: " />
+          <input type="tel" required placeholder="Введите номер телфона: " />
         </div>
         <div class="f12">
-          <input type="text" placeholder="Введите паспортные данные: " />
+          <input
+            type="text"
+            required
+            placeholder="Введите паспортные данные: "
+          />
         </div>
         <div class="f13">
-          <input type="text" placeholder="Введите последние 4 цифры карты: " />
+          <input
+            type="text"
+            required
+            placeholder="Введите последние 4 цифры карты: "
+          />
         </div>
       </div>
       <div class="f14">
-        <input type="date" />
+        <input type="date" required />
       </div>
       <div class="btnSubmit2">
         <input type="submit" value="Отправить" />
@@ -107,8 +133,10 @@
           <img src="./Image/bmw.jpg" alt="BMW I8" class="car-image" />
           <h3 class="car-title">BMW I8</h3>
           <label class="car-checkbox">
-            <input type="checkbox" /> Выбрать автомобиль
+            <input type="checkbox" id="myCheckbox" onchange="toggleButton()" />
+            Выбрать автомобиль
           </label>
+          <a id="myButton" style="display: none" href="bookingFinal.html">Бронировать</a>
         </div>
         <div class="car-card">
           <img
@@ -118,15 +146,27 @@
           />
           <h3 class="car-title">Mercedes-Benz G-Класс</h3>
           <label class="car-checkbox">
-            <input type="checkbox" /> Выбрать автомобиль
+            <input
+              type="checkbox"
+              id="myCheckbox1"
+              onchange="toggleButton1()"
+            />
+            Выбрать автомобиль
           </label>
+          <a id="myButton1" style="display: none" href="bookingFinal.html">Бронировать</a>
         </div>
         <div class="car-card">
           <img src="./Image/lexus.jpg" alt="Lexus IS с V8" class="car-image" />
           <h3 class="car-title">Lexus IS с V8</h3>
           <label class="car-checkbox">
-            <input type="checkbox" /> Выбрать автомобиль
+            <input
+              type="checkbox"
+              id="myCheckbox2"
+              onchange="toggleButton2()"
+            />
+            Выбрать автомобиль
           </label>
+          <a id="myButton2" style="display: none" href="bookingFinal.html">Бронировать</a>
         </div>
       </div>
       <div class="car-grid">
@@ -134,8 +174,14 @@
           <img src="./Image/lada.jpg" alt="Lada Granta" class="car-image" />
           <h3 class="car-title">Lada Granta</h3>
           <label class="car-checkbox">
-            <input type="checkbox" /> Выбрать автомобиль
+            <input
+              type="checkbox"
+              id="myCheckbox3"
+              onchange="toggleButton3()"
+            />
+            Выбрать автомобиль
           </label>
+          <a id="myButton3" style="display: none" href="bookingFinal.html">Бронировать</a>
         </div>
         <div class="car-card">
           <img
@@ -145,15 +191,27 @@
           />
           <h3 class="car-title">Dodge Challenger</h3>
           <label class="car-checkbox">
-            <input type="checkbox" /> Выбрать автомобиль
+            <input
+              type="checkbox"
+              id="myCheckbox4"
+              onchange="toggleButton4()"
+            />
+            Выбрать автомобиль
           </label>
+          <a id="myButton4" style="display: none" href="bookingFinal.html">Бронировать</a>
         </div>
         <div class="car-card">
           <img src="./Image/camrt.jpg" alt="Lexus IS с V8" class="car-image" />
           <h3 class="car-title">Toyota Camry</h3>
           <label class="car-checkbox">
-            <input type="checkbox" /> Выбрать автомобиль
+            <input
+              type="checkbox"
+              id="myCheckbox5"
+              onchange="toggleButton5()"
+            />
+            Выбрать автомобиль
           </label>
+          <a id="myButton5" style="display: none" href="bookingFinal.html">Бронировать</a>
         </div>
       </div>
     </section>
